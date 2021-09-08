@@ -1,0 +1,23 @@
+pipeline
+
+{
+    agent any
+
+    stages
+    {
+     stage('stage-1')
+     { steps
+     { sh 'echo hi, this is jenkins'
+       sh 'echo hi, this is mazhar'
+
+     }
+     }
+     stage (stage-2-code)
+     {
+       steps
+       {sh 'echo code_is_building'}
+
+     }
+    }
+
+}
