@@ -1,0 +1,21 @@
+pipeline
+{
+agent any
+
+stages
+{
+    stage ('stage-1')
+    {
+        steps {
+            sh 'echo, coding is building'
+            sh 'echo, coding going to boom the url' 
+        }
+    }
+
+    stage ('stage-2')
+    {
+        sh 'echo, this code is crested by mazhar'
+        sh 'echo, to check the understanding of pipeline styleg'
+    }
+}
+}
