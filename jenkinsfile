@@ -12,7 +12,7 @@ pipeline
 
      }
      }
-     stage (stage-2-code)
+     stage ('stage-2-code')
      {
        steps
        {sh 'echo code_is_building'}
