@@ -1,0 +1,24 @@
+pipeline
+{
+    agent any 
+    stages
+    {
+        stage ('clone_the_code')
+        {steps {echo 'code is downloading'}}
+
+        stage ('execute unit test case')
+        {steps {echo 'executing the unit test case'}}
+
+        stage ('building code')
+        {steps{echo 'building the code'}}
+
+        stage ('deploy package to a deve server')
+        {steps {input 'deployong package to a dev server'}}
+
+         stage ('deploy package to a qa server')
+        {steps {input 'deployong package to a qa server'}}
+        
+         stage ('deploy package to a prod server')
+        {steps {input 'deployong package to a prod server'}}
+    }
+}
